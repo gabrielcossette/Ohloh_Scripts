@@ -35,7 +35,7 @@ For $x = 1 To $data[0]
 	;ADD ENLISTMENT
 
 	;Post request
-	$oHTTP.Open("POST", "https://www.ohloh.net/p/illasme/enlistments", False)
+	$oHTTP.Open("POST", "https://www.ohloh.net/p/" & $project & "/enlistments", False)
 	;Add User-Agent header
 	$oHTTP.SetRequestHeader("User-Agent", "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.0.10) Gecko/2009042316 Firefox/3.0.10 (.NET CLR 4.0.20506)")
 	;Add Referrer header
