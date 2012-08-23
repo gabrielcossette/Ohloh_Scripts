@@ -4,8 +4,6 @@ Dim $array
 Dim $data
 Dim $project
 
-
-
 _FileReadToArray("data.txt", $data)
 
 $oHTTP = ObjCreate("winhttp.winhttprequest.5.1")
@@ -48,7 +46,9 @@ For $x = 1 To $data[0]
 	;$oReceived = $oHTTP.ResponseText
 
 	$log = FileOpen("log.txt", 1)
+
 	FileWriteLine($log, $data[$x])
+
 	FileClose($log)
 
 	Sleep(5000)
