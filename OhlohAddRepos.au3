@@ -10,8 +10,10 @@ _FileReadToArray("data.txt", $data)
 
 $oHTTP = ObjCreate("winhttp.winhttprequest.5.1")
 
-$project = InputBox("Project name", "Project name")
+$project = InputBox("Project name", "Project short name")
+
 $username = InputBox("Username", "Username")
+
 $password = InputBox("Password", "Password")
 
 ;LOGIN

@@ -1,4 +1,4 @@
-OhlohModRepositories
+Ohloh Edit Repositories
 ====================
 
-Scripts to batch modify Ohloh project repositories
+Scripts to batch edit Ohloh project repositories
