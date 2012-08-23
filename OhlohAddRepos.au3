@@ -2,13 +2,17 @@
 
 Dim $array
 Dim $data
+Dim $project
+
+
 
 _FileReadToArray("data.txt", $data)
 
 $oHTTP = ObjCreate("winhttp.winhttprequest.5.1")
 
-$username = InputBox("Username", "username")
-$password = InputBox("Password", "password")
+$project = InputBox("Project name", "Project name")
+$username = InputBox("Username", "Username")
+$password = InputBox("Password", "Password")
 
 ;LOGIN
 
@@ -35,7 +39,7 @@ For $x = 1 To $data[0]
 	;Add User-Agent header
 	$oHTTP.SetRequestHeader("User-Agent", "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.0.10) Gecko/2009042316 Firefox/3.0.10 (.NET CLR 4.0.20506)")
 	;Add Referrer header
-	$oHTTP.SetRequestHeader("Referrer", "https://www.ohloh.net/p/illasme/enlistments/new")
+	$oHTTP.SetRequestHeader("Referrer", "https://www.ohloh.net/p/" & $project & "/enlistments/new")
 	;Add Content-Type
 	$oHTTP.SetRequestHeader("Content-Type", "application/x-www-form-urlencoded")
 	;Send POST request
