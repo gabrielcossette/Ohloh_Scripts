@@ -1,3 +1,13 @@
+#cs ----------------------------------------------------------------------------
+
+ AutoIt Version: 3.3.8.1
+ Author:         Gabriel Cossette
+
+ Script Function:
+	Batch add Ohloh repositories
+
+#ce ----------------------------------------------------------------------------
+
 #include <file.au3>
 
 Dim $array
