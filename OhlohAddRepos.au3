@@ -4,7 +4,7 @@
  Author:         Gabriel Cossette
 
  Script Function:
-	Batch add Ohloh repositories.
+	Script to add Ohloh repositories in batch
 
 #ce ----------------------------------------------------------------------------
 
